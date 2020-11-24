@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if @x <= 0 || @y <= 0 || @z <= 0 || (@x + @y) < @z || (@y + @z) < @x || (@x + @z) < @y
+    if @x <= 0 || @y <= 0 || @z <= 0 || (@x + @y) <= @z || (@y + @z) <= @x || (@x + @z) <= @y
       raise TriangleError
     else
       if @x == @y && @y == @z
