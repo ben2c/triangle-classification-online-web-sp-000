@@ -15,6 +15,7 @@ class Triangle
     elsif @x == @y || @x == @z || @y == @z
       return :isosceles
 
+    elsif @x != @y || @x != @z || @y != @z
     end
   end
 
