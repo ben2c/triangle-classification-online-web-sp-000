@@ -9,15 +9,16 @@ class Triangle
   end
 
   def kind
-    if @x == @y && @y == @z
-      return :equilateral
+    if @x != 0 && @y != 0 && @z != 0
+      if @x == @y && @y == @z
+        return :equilateral
 
-    elsif @x == @y || @x == @z || @y == @z
-      return :isosceles
+      elsif @x == @y || @x == @z || @y == @z
+        return :isosceles
 
-    elsif @x != @y || @x != @z || @y != @z
-      return :scalene
-
+      elsif @x != @y || @x != @z || @y != @z
+        return :scalene
+      end
     end
   end
 
