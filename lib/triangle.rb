@@ -11,6 +11,10 @@ class Triangle
   def kind
     if @x == @y && @y == @x
       return :equilateral
+
+    elsif @x == @y || @x == @z || @y == @z
+      return :isoceles
+
     end
   end
 
