@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if @x == @y && @y == @x
+    if @x == @y && @y == @z 
       return :equilateral
 
     elsif @x == @y || @x == @z || @y == @z
