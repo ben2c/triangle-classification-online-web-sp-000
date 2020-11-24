@@ -13,7 +13,7 @@ class Triangle
       return :equilateral
 
     elsif @x == @y || @x == @z || @y == @z
-      return :isoceles
+      return :isosceles
 
     end
   end
